@@ -1,0 +1,242 @@
+{% extends "base.html" %}
+
+
+{% block title %}Blog{% endblock title %}
+
+{% block body %}
+
+<style>
+    /*Start Blog Page Area*/
+
+.blog_area {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23f9f9f9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  padding: 50px 0 80px 0;
+}
+
+.blog_title h2 {
+  border-bottom: 8px solid #F57170;
+  margin-bottom: 80px;
+  padding-bottom: 15px;
+}
+
+.ind_blog {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+.ind_blog article {
+  padding: 10px;
+}
+
+.ind_blog article header h2 {
+  font-size: 24px;
+  line-height: 1.5em;
+  color: #757575;
+}
+
+.ind_blog article header ul li {
+  margin-bottom: 15px;
+  color: #f2f2f2
+}
+
+.ind_blog article header ul li a {
+  color: #adadad;
+}
+
+.blog_news p {
+  color: #242424;
+  text-align: justify;
+}
+
+.blog_news_cat small {
+  color: #adadad;
+}
+
+.btn_outline {
+  padding: .65em 1.25em;
+  font-size: inherit;
+  color: #20515b;
+  background: transparent;
+  border-color: #20515b;
+  border-radius: .25em;
+}
+
+.blog_see_all {
+  padding-top: 50px;
+}
+
+.blog_see_all a:hover {
+  background: #20515b;
+  color: #ffffff;
+}
+
+
+/*End Blog Page Area*/
+</style>
+
+<!--Start Blog Area-->
+<section class="blog_area">
+    <div class="container">
+  
+      <div class="row">
+        <div class="col-sm-2 col-sm-offset-5">
+          <div class="blog_title text-center">
+            <h2>Blog</h2>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="row">
+        <div class="blog">
+          <div class="col-md-4 col-xs-12">
+            <div class="ind_blog">
+              <article>
+                <header>
+                  <h2>Lorem ipsum dolor sit amet.</h2>
+                  <ul class="list-inline">
+                    <li><a href="">Author | <span>Momin</span></a></li>
+                    <li><a href="">Published | <span>20-16-2017</span></a></li>
+                  </ul>
+                </header>
+                <section>
+                  <div class="blog_news">
+                    <div class="blog_image">
+                      <figure>
+                        <img class="img-responsive" src="https://i.imgur.com/hxiPgcK.jpg" alt="mongo">
+                        <figcaption class="text-center">
+                          <small>Lorem ipsum dolor sit.</small>
+                        </figcaption>
+                      </figure>
+  
+                    </div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, beatae cum distinctio dolore ducimus eaque repellendus suscipit. Dignissimos doloremque, impedit provident sit voluptatem voluptates. Ad autem id non numquam quod.
+                    </p>
+                  </div>
+                </section>
+                <section>
+                  <footer class="blog_news_footer">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="blog_news_cat pull-left">
+                          <small>Category <span>Javascript</span></small>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="blog_news_readmore pull-right">
+                          <a class="btn btn-sm btn-warning" href="">Readmore</a>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </footer>
+                </section>
+              </article>
+            </div>
+          </div>
+  
+          <div class="col-md-4 col-xs-12">
+            <div class="ind_blog">
+              <article>
+                <header>
+                  <h2>Lorem ipsum dolor sit amet.</h2>
+                  <ul class="list-inline">
+                    <li><a href="">Author | <span>Momin</span></a></li>
+                    <li><a href="">Published | <span>20-16-2017</span></a></li>
+                  </ul>
+                </header>
+                <section>
+                  <div class="blog_news">
+                    <div class="blog_image">
+                      <figure>
+                        <img class="img-responsive" src="https://i.imgur.com/zQIlCOu.jpg" alt="mongo">
+                        <figcaption class="text-center">
+                          <small>Lorem ipsum dolor sit.</small>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, beatae cum distinctio dolore ducimus eaque repellendus suscipit. Dignissimos doloremque, impedit provident sit voluptatem voluptates. Ad autem id non numquam quod.
+                    </p>
+                  </div>
+                </section>
+                <section>
+                  <footer class="blog_news_footer">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="blog_news_cat pull-left">
+                          <small>Category <span>Javascript</span></small>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="blog_news_readmore pull-right">
+                          <a class="btn btn-sm btn-warning" href="">Readmore</a>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </footer>
+                </section>
+              </article>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="ind_blog">
+              <article>
+                <header>
+                  <h2>Lorem ipsum dolor sit amet.</h2>
+                  <ul class="list-inline">
+                    <li><a href="">Author | <span>Momin</span></a></li>
+                    <li><a href="">Published | <span>20-16-2017</span></a></li>
+                  </ul>
+                </header>
+                <section>
+                  <div class="blog_news">
+                    <div class="blog_image">
+                      <figure>
+                        <img class="img-responsive" src="https://i.imgur.com/iTSjCKD.jpg" alt="mongo">
+                        <figcaption class="text-center">
+                          <small>Lorem ipsum dolor sit.</small>
+                        </figcaption>
+                      </figure>
+  
+                    </div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, beatae cum distinctio dolore ducimus eaque repellendus suscipit. Dignissimos doloremque, impedit provident sit voluptatem voluptates. Ad autem id non numquam quod.
+                    </p>
+                  </div>
+                </section>
+                <section>
+                  <footer class="blog_news_footer">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="blog_news_cat pull-left">
+                          <small>Category <span>Javascript</span></small>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="blog_news_readmore pull-right">
+                          <a class="btn btn-sm btn-warning" href="">Readmore</a>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </footer>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="blog_see_all text-center">
+        <a class="btn btn-lg btn_outline" href="">
+          <span class="blog_icon"><i class="fa fa-file"></i> Read out the Blog</span>
+        </a>
+      </p>
+    </div>
+  </section>
+  <!--End Blog Area-->
+
+{% endblock body %}
